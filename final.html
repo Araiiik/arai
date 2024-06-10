@@ -8,206 +8,61 @@
     <link rel="shortcut icon" href="https://cdn.logojoy.com/wp-content/uploads/2018/05/30144704/2_big2.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <style>
-</head>
-<body>
-        /* Global styles */
         body {
-            background-color: #e0f7fa;
+            background-color: #f8f9fa;
             font-family: Arial, sans-serif;
         }
         .navbar-brand img {
             height: 40px;
         }
-        footer {
-            background-color: #343a40;
-            color: white;
-            padding: 20px 0;
-        }
-        footer a {
-            color: #f8f9fa;
-        }
-        /* Custom styles for specific pages */
-        .article-card {
-            border: 1px solid #dee2e6;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            padding: 10px;
-        }
-        .opinion-title {
-            color: #007bff;
-            cursor: pointer;
-        }
-        .opinion-title:hover {
-            color: purple;
-        }
-    </style>
-</head>
-<body>
-    <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Political News Logo"> Political News</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html" data-translate="home">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="articles.html" data-translate="articles">Articles</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="opinions.html" data-translate="opinions">Opinions</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="quiz.html" data-translate="quiz">Quiz</a>
-            </li>
-        </ul>
-        <button class="btn btn-primary ml-2" id="language-btn" onclick="switchLanguage()">Switch to Russian</button>
-    </div>
-</nav>
-
-<!-- Content Example -->
-<div class="container">
-    <h1 id="home-title" data-translate="homeTitle">Welcome to Political News</h1>
-    <p id="home-description" data-translate="homeDescription">Stay informed about the latest political news and updates.</p>
-</div>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html"><img src="https://cdn.logojoy.com/wp-content/uploads/2018/05/30144704/2_big2.png" alt="Political News Logo"> Political News</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#infographics">Infographics</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#articles">Articles</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#opinions">Opinions</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#quiz">Quiz</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Home Page -->
-    <section id="home" class="container text-center my-4">
-        <h2>Welcome to Political News</h2>
-        <p>Stay informed about the latest political news and updates.</p>
-        <!-- Add your home page content here -->
-    </section>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<script>
-    const translations = {
-        en: {
-            home: "Home",
-            articles: "Articles",
-            opinions: "Opinions",
-            quiz: "Quiz",
-            homeTitle: "Welcome to Political News",
-            homeDescription: "Stay informed about the latest political news and updates."
-        },
-        ru: {
-            home: "Главная",
-            articles: "Статьи",
-            opinions: "Мнения",
-            quiz: "Викторина",
-            homeTitle: "Добро пожаловать в Политические Новости",
-            homeDescription: "Будьте в курсе последних новостей и обновлений политики."
-        }
-    };
-
-    let currentLanguage = 'en';
-
-    function switchLanguage() {
-        currentLanguage = currentLanguage === 'en' ? 'ru' : 'en';
-        document.getElementById('language-btn').innerText = currentLanguage === 'en' ? 'Switch to Russian' : 'Переключиться на английский';
-        document.querySelectorAll('[data-translate]').forEach(element => {
-            element.innerText = translations[currentLanguage][element.dataset.translate];
-        });
-        document.getElementById('home-title').innerText = translations[currentLanguage].homeTitle;
-        document.getElementById('home-description').innerText = translations[currentLanguage].homeDescription;
-    }
-</script>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Political News</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css">
-    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJY0QrLX0c8SPakMVJ4LWoXSherE8Ri1nhrA&s" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <style>
-        body {
-            background-color: #e0f7fa;
-            font-family: Arial, sans-serif;
-        }
-
-        .navbar-brand img {
-            height: 40px;
-        }
-
         .jumbotron {
-            background: #f8f9fa;
+            background: #007bff;
+            color: white;
         }
-
         .card-title {
             font-size: 1.5rem;
             color: #007bff;
         }
-
         .card-text {
             font-size: 1rem;
             color: #333;
         }
-
         #subscribeBtn {
             font-size: 1.2rem;
-            background-color: red;
+            background-color: #007bff;
             color: white;
             padding: 10px 20px;
             border: none;
         }
-
         #subscribeBtn:hover {
-            background-color: darkblue;
+            background-color: #0056b3;
             cursor: pointer;
         }
-
         footer {
             background-color: #343a40;
             color: white;
             padding: 20px 0;
         }
-
         footer a {
             color: #f8f9fa;
         }
-
         .modal-body {
             font-size: 1.2rem;
         }
-
         .modal-footer button {
             font-size: 1.2rem;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
     <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Political News Logo"> Political News</a>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html"><img src="https://cdn.logojoy.com/wp-content/uploads/2018/05/30144704/2_big2.png" alt="Political News Logo"> Political News</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -215,6 +70,9 @@
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="nav-link" href="index.html" data-translate="home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="infographics.html" data-translate="infographics">Infographics</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="articles.html" data-translate="articles">Articles</a>
@@ -230,95 +88,68 @@
     </div>
 </nav>
 
-<!-- Content Example -->
-<div class="container">
-    <h1 id="home-title" data-translate="homeTitle">Welcome to Political News</h1>
-    <p id="home-description" data-translate="homeDescription">Stay informed about the latest political news and updates.</p>
-</div>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJY0QrLX0c8SPakMVJ4LWoXSherE8Ri1nhrA&s" alt="Political News Logo"> Political News</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="news.html">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="quiz.html">Quiz</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
     <!-- Header Section -->
     <header class="jumbotron text-center">
-        <h1 class="display-4">Politics these days</h1>
-        <p class="lead">Stay updated with the latest political news and do not forget to subscribe</p>
-        <button id="subscribeBtn" class="btn btn-lg">Subscribe</button>
+        <h1 class="display-4" data-translate="homeTitle">Politics These Days</h1>
+        <p class="lead" data-translate="homeDescription">Stay updated with the latest political news and do not forget to subscribe</p>
+        <button id="subscribeBtn" class="btn btn-lg" data-translate="subscribe">Subscribe</button>
     </header>
 
     <!-- Site Introduction -->
     <section class="container text-center my-4">
-        <h2>Here you will find the latest news about politics. If you are interested in this topic, subscribe and stay with us to be the first to follow the news!</h2>
-        <p>We provide the latest and most accurate political news from around the world. Our mission is to keep you informed and engaged with the political landscape.</p>
+        <h2 data-translate="introTitle">Welcome to Political News</h2>
+        <p data-translate="introDescription">Stay informed about the latest political news and updates.</p>
     </section>
 
     <!-- News Section -->
     <div class="container">
         <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi2yPUFNKENfhIVWW7UJHFsZxqxb_k_hqXtw&s" class="card-img-top" alt="Breaking political news">
+                    <div class="card-body">
+                        <h3 class="card-title" data-translate="newsTitle1">Breaking Political News</h3>
+                        <p class="card-text" data-translate="newsDesc1">A selection of the most high-profile political cases...</p>
+                        <a href="#" class="btn btn-primary" data-translate="readMore">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDY0ol4ho4mdz4NDeyingAFFZ5X6DjkIg7SQ&s" class="card-img-top" alt="The politics of Russia and Ukraine">
+                    <div class="card-body">
+                        <h3 class="card-title" data-translate="newsTitle2">The Politics of Russia and Ukraine</h3>
+                        <p class="card-text" data-translate="newsDesc2">Summary of their relationships goes here...</p>
+                        <a href="#" class="btn btn-primary" data-translate="readMore">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-8">
-                <h2>Latest News</h2>
                 <div class="card mb-4">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi2yPUFNKENfhIVWW7UJHFsZxqxb_k_hqXtw&s" class="card-img-top" alt="Article 1">
+                    <img src="https://blog.politics.ox.ac.uk/wp-content/uploads/2023/05/visual-politics-1263x560.jpg" class="card-img-top" alt="What is happening in Afghanistan?">
                     <div class="card-body">
-                        <h3 class="card-title">Breaking political news</h3>
-                        <p class="card-text">a selection of the most high-profile political cases...</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-                <div class="card mb-4">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDY0ol4ho4mdz4NDeyingAFFZ5X6DjkIg7SQ&s" class="card-img-top" alt="Article 2">
-                    <div class="card-body">
-                        <h3 class="card-title">The politics of Russia and Ukraine</h3>
-                        <p class="card-text">Summary of their relationships goes here...</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-                <div class="card mb-4">
-                    <img src="https://blog.politics.ox.ac.uk/wp-content/uploads/2023/05/visual-politics-1263x560.jpg" alt="Your Image" width="440" height="780"> class="card-img-top" alt="Article 3">
-                    <div class="card-body">
-                        <h3 class="card-title">What is happening in Afghanistan?</h3>
-                        <p class="card-text">The situation of war goes here...</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
+                        <h3 class="card-title" data-translate="newsTitle3">What is Happening in Afghanistan?</h3>
+                        <p class="card-text" data-translate="newsDesc3">The situation of war goes here...</p>
+                        <a href="#" class="btn btn-primary" data-translate="readMore">Read More</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <h2>Contact Us</h2>
-                <p>Email: contact@politicalnews.com</p>
-                <p>Address: Turan Street, Astana, Kazakhstan</p>
-                <p>Phone: +7762113298</p>
-                <p>For more information, please visit our <a href="about.html">About Page</a>.</p>
+                <h2 data-translate="contactTitle">Contact Us</h2>
+                <p>Email: <span data-translate="contactEmail">contact@politicalnews.com</span></p>
+                <p data-translate="contactAddress">Address: Turan Street, Astana, Kazakhstan</p>
+                <p data-translate="contactPhone">Phone: +7762113298</p>
+                <p data-translate="contactMore">For more information, please visit our <a href="about.html">About Page</a>.</p>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
     <footer class="text-center">
-        <p>&copy; 2024 Political News. All Rights Reserved.</p>
-        <p><a href="contact.html">Contact Us</a> | <a href="privacy.html">Privacy Policy</a></p>
+        <p>&copy; 2024 Political News. <span data-translate="rights">All Rights Reserved.</span></p>
+        <p><a href="contact.html" data-translate="contactUs">Contact Us</a> | <a href="privacy.html" data-translate="privacyPolicy">Privacy Policy</a></p>
     </footer>
 
     <!-- Pop-up Modal -->
@@ -326,7 +157,7 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="subscribeModalLabel">Subscribe to our Newsletter</h5>
+                    <h5 class="modal-title" id="subscribeModalLabel" data-translate="subscribeTitle">Subscribe to our Newsletter</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -334,13 +165,13 @@
                 <div class="modal-body">
                     <form>
                         <div class="form-group">
-                            <label for="email">Email address</label>
+                            <label for="email" data-translate="emailLabel">Email address</label>
                             <input type="email" class="form-control" id="email" placeholder="Enter your email">
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" onclick="submitEmail()">Subscribe</button>
+                    <button type="button" class="btn btn-primary" onclick="submitEmail()" data-translate="subscribe">Subscribe</button>
                 </div>
             </div>
         </div>
@@ -358,17 +189,155 @@
         function submitEmail() {
             document.getElementById('subscribeBtn').style.backgroundColor = 'darkblue';
         }
+
+        const translations = {
+            en: {
+                home: "Home",
+                articles: "Articles",
+                opinions: "Opinions",
+                quiz: "Quiz",
+                homeTitle: "Politics These Days",
+                homeDescription: "Stay updated with the latest political news and do not forget to subscribe",
+                introTitle: "Welcome to Political News",
+                introDescription: "Stay informed about the latest political news and updates.",
+                newsTitle1: "Breaking Political News",
+                newsDesc1: "A selection of the most high-profile political cases...",
+                newsTitle2: "The Politics of Russia and Ukraine",
+                newsDesc2: "Summary of their relationships goes here...",
+                newsTitle3: "What is Happening in Afghanistan?",
+                newsDesc3: "The situation of war goes here...",
+                contactTitle: "Contact Us",
+                contactEmail: "contact@politicalnews.com",
+                contactAddress: "Address: Turan Street, Astana, Kazakhstan",
+                contactPhone: "Phone: +7762113298",
+                contactMore: "For more information, please visit our About Page.",
+                rights: "All Rights Reserved.",
+                contactUs: "Contact Us",
+                privacyPolicy: "Privacy Policy",
+                subscribe: "Subscribe",
+                subscribeTitle: "Subscribe to our Newsletter",
+                emailLabel: "Email address"
+            },
+            ru: {
+                home: "Главная",
+                articles: "Статьи",
+                opinions: "Мнения",
+                quiz: "Викторина",
+                homeTitle: "Современная политика",
+                homeDescription: "Будьте в курсе последних политических новостей и не забудьте подписаться",
+                introTitle: "Добро пожаловать на Political News",
+                introDescription: "Будьте в курсе последних политических новостей и обновлений.",
+                newsTitle1: "Срочные политические новости",
+                newsDesc1: "Подборка самых громких политических дел...",
+                newsTitle2: "Политика России и Украины",
+                newsDesc2: "Краткое описание их взаимоотношений...",
+                newsTitle3: "Что происходит в Афганистане?",
+                newsDesc3: "Ситуация войны здесь...",
+                contactTitle: "Свяжитесь с нами",
+                contactEmail: "contact@politicalnews.com",
+                contactAddress: "Адрес: улица Туран, Астана, Казахстан",
+                contactPhone: "Телефон: +7762113298",
+                contactMore: "Для получения дополнительной информации, пожалуйста, посетите нашу страницу О нас.",
+                rights: "Все права защищены.",
+                contactUs: "Связаться с нами",
+                privacyPolicy: "Политика конфиденциальности",
+                subscribe: "Подписаться",
+                subscribeTitle: "Подпишитесь на нашу рассылку",
+                emailLabel: "Электронная почта"
+            }
+        };
+
+        function switchLanguage() {
+            const currentLanguage = document.getElementById('language-btn').innerText === "Switch to Russian" ? "en" : "ru";
+            const newLanguage = currentLanguage === "en" ? "ru" : "en";
+            document.querySelectorAll('[data-translate]').forEach(element => {
+                const key = element.getAttribute('data-translate');
+                element.innerText = translations[newLanguage][key];
+            });
+            document.getElementById('language-btn').innerText = newLanguage === "en" ? "Switch to Russian" : "Переключиться на английский";
+        }
     </script>
 </body>
 </html>
 
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographics - Political News</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        body {
+            background-color: #e0f7fa;
+            font-family: Arial, sans-serif;
+        }
 
-    <!-- Infographics Page -->
-    <section id="infographics" class="container text-center my-4">
-        <h2>Political Infographics</h2>
-        <!-- Add your infographics content here -->
-    </section>
-<!DOCTYPE html>
+        .top-frame {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 3px solid #007bff;
+            margin-bottom: 20px;
+        }
+
+        .carousel-item img {
+            max-height: 400px;
+            object-fit: cover;
+        }
+
+        .infographic-title {
+            color: #007bff;
+            cursor: pointer;
+        }
+
+        .infographic-title:hover {
+            color: purple;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #f8f9fa;
+        }
+
+        .modal-body img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Frame -->
+    <div class="top-frame">
+        <h1>Infographics Page</h1>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Political News</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="infographics.html">Infographics</a></li>
+                <li class="nav-item"><a class="nav-link" href="articles.html">Articles</a></li>
+                <li class="nav-item"><a class="nav-link" href="opinions.html">Opinions</a></li>
+                <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+            </ul>
+        </div>
+    </nav>
+
+   <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -405,135 +374,78 @@
         footer a {
             color: #f8f9fa;
         }
+
+        /* Custom styles for the carousel */
+        .carousel-inner {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+        }
+
+        .carousel-item {
+            flex: 0 0 auto;
+            width: 50%; /* Display two items per slide */
+        }
+
+        .carousel-control-prev, .carousel-control-next {
+            width: auto;
+        }
+
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            background-color: black; /* Change control button color */
+        }
+
+        .carousel-control-prev:hover, .carousel-control-next:hover {
+            background-color: gray; /* Change control button hover color */
+        }
     </style>
-</head>
-<body>
 </head>
 <body>
     <!-- Navbar -->
     <!-- Infographics Section -->
     <div class="container text-center my-4">
         <h2>Political Infographics</h2>
-        <div class="row">
-            <div class="col-md-3">
-                <img src="https://static.vecteezy.com/system/resources/previews/000/466/103/original/politics-infographics-set-vector.jpg" alt="Your Image" width="440" height="780"> class="img-fluid" alt="Infographic 1">
-                <h3 class="Press conference" onclick="openModal('infographic1Modal')">Infographic Title 1</h3>
+        <div id="infographicsCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://static.vecteezy.com/system/resources/previews/000/466/103/original/politics-infographics-set-vector.jpg" class="d-block w-100" alt="Infographic 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="Press conference" onclick="openModal('infographic1Modal')">Infographic Title 1</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://img.freepik.com/free-vector/presidential-election-infographics_1284-11986.jpg" class="d-block w-100" alt="Infographic 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="Election" onclick="openModal('infographic2Modal')">Infographic Title 2</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://wcs.smartdraw.com/statistical-infographics/examples/political-02.png?bn=15100111938" class="d-block w-100" alt="Infographic 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="candidates" onclick="openModal('infographic3Modal')">Infographic Title 3</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781507210819/the-infographic-guide-to-american-government-9781507210819_hr.jpg" class="d-block w-100" alt="Infographic 4">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="American government" onclick="openModal('infographic4Modal')">Infographic Title 4</h3>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-3">
-                <img src="https://img.freepik.com/free-vector/presidential-election-infographics_1284-11986.jpg" alt="Your Image" width="440" height="780"> class="img-fluid" alt="Infographic 2">
-                <h3 class="Election" onclick="openModal('infographic2Modal')">Infographic Title 2</h3>
-            </div>
-            <div class="col-md-3">
-                <img src="https://wcs.smartdraw.com/statistical-infographics/examples/political-02.png?bn=15100111938" alt="Your Image" width="440" height="780"> class="img-fluid" alt="Infographic 3">
-                <h3 class="candidates" onclick="openModal('infographic3Modal')">Infographic Title 3</h3>
-            </div>
-            <div class="col-md-3">
-                <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781507210819/the-infographic-guide-to-american-government-9781507210819_hr.jpg" alt="Your Image" width="440" height="780"> class="img-fluid" alt="Infographic 4">
-                <h3 class="American government" onclick="openModal('infographic4Modal')">Infographic Title 4</h3>
-            </div>
+            <a class="carousel-control-prev" href="#infographicsCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#infographicsCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
 
     <!-- Footer -->
     <footer class="text-center">
-        <p>&copy; 2024 Political News. All Rights Reserved.</p>
-        <p><a href="contact.html">Contact Us</a> | <a href="privacy.html">Privacy Policy</a></p>
-    </footer>
-
-    <!-- Pop-up Modals for Infographics -->
-    <div class="modal fade" id="infographic1Modal" tabindex="-1" role="dialog" aria-labelledby="infographic1ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="infographic1ModalLabel">Press conference</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    Detailed information about press conference goes here...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="infographic2Modal" tabindex="-1" role="dialog" aria-labelledby="infographic2ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="infographic2ModalLabel">Election</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    Detailed information about election goes here...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="infographic3Modal" tabindex="-1" role="dialog" aria-labelledby="infographic3ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="infographic3ModalLabel">Candidates</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    Detailed information about Candidates goes here...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="infographic4Modal" tabindex="-1" role="dialog" aria-labelledby="infographic4ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="infographic4ModalLabel">American Government</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    Detailed information about American government goes here...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
-    <script>
-        function openModal(modalId) {
-            $('#' + modalId).modal('show');
-        }
-    </script>
-</body>
-</html>
-
-    <!-- Articles Page -->
-    <section id="articles" class="container text-center my-4">
-        <h2>Political Articles</h2>
-        <!-- Add your articles content here -->
-    </section>
+        <p>&copy; 2024 Political News. All
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -544,8 +456,6 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <style>
-</head>
-<body>
         body {
             background-color: #e0f7fa;
             font-family: Arial, sans-serif;
@@ -567,6 +477,27 @@
 
         footer a {
             color: #f8f9fa;
+        }
+
+        .page-title {
+            border-top: 5px solid white;
+            padding-top: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .lang-switcher {
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        .lang-switcher button {
+            margin-right: 10px;
+        }
+
+        .article-img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -600,11 +531,17 @@
 
     <!-- Articles Section -->
     <div class="container">
-        <h2 class="text-center my-4">Political Articles</h2>
+        <div class="page-title">
+            <h2>Political Articles</h2>
+            <div class="lang-switcher">
+                <button onclick="switchLanguage('en')">EN</button>
+                <button onclick="switchLanguage('fr')">FR</button>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-6">
                 <div class="card">
-                    <img src="https://media.cnn.com/api/v1/images/stellar/prod/2024-06-08t124750z-2101947554-rc2078axe0xu-rtrmadp-3-france-usa-copy.jpg?c=16x9&q=h_438,w_780,c_fill" class="card-img-top" alt="Article 1">
+                    <img src="https://media.cnn.com/api/v1/images/stellar/prod/2024-06-08t124750z-2101947554-rc2078axe0xu-rtrmadp-3-france-usa-copy.jpg?c=16x9&q=h_500,w_800,c_fill" class="card-img-top article-img" alt="Article 1">
                     <div class="card-body">
                         <h3 class="card-title">Joe Biden and his political steps</h3>
                         <p class="card-text">Summary of the article...</p>
@@ -612,7 +549,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+           <div class="col-md-6">
                 <div class="card">
                     <img src="https://image.cnbcfm.com/api/v1/image/106240744-1573590258713politicaldebate.jpg?v=1573590321&w=440&h=780" class="card-img-top" alt="Article 2">
                     <div class="card-body">
@@ -644,6 +581,8 @@
             </div>
         </div>
     </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="text-center">
@@ -671,63 +610,6 @@
         </div>
     </div>
 
-    <div class="modal fade" id="article2Modal" tabindex="-1" role="dialog" aria-labelledby="article2ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="article2ModalLabel">Women inequality in politics</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    Full content of the article  goes here...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="article3Modal" tabindex="-1" role="dialog" aria-labelledby="article3ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="article3ModalLabel">Womens in politics</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    Full content of the article goes here...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="article4Modal" tabindex="-1" role="dialog" aria-labelledby="article4ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="article4ModalLabel">Social medias in politics</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    Full content of the article goes here...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
@@ -736,11 +618,16 @@
         function openModal(modalId) {
             $('#' + modalId).modal('show');
         }
+
+        function switchLanguage(lang) {
+            // Implement language switching logic here
+            alert('Switched to ' + lang);
+        }
     </script>
 </body>
 </html>
 
-    <!-- Opinions Page -->
+  <!-- Opinions Page -->
     <section id="opinions" class="container text-center my-4">
         <h2>Political Opinions</h2>
         <!-- Add your opinions content here -->
@@ -752,7 +639,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opinions - Political News</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://cdn.logojoy.com/wp-content/uploads/2018/05/30144704/2_big2.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <style>
 </head>
@@ -789,7 +676,7 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Political News Logo"> Political News</a>
+        <a class="navbar-brand" href="index.html"><img src="https://cdn.logojoy.com/wp-content/uploads/2018/05/30144704/2_big2.png" alt="Political News Logo"> Political News</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -816,23 +703,23 @@
 
     <!-- Opinions Section -->
     <div class="container text-center my-4">
-        <h2>Political Opinions</h2>
+        <h2>Experts Opinions</h2>
         <div class="row">
             <div class="col-md-6">
                 <img src="https://t3.ftcdn.net/jpg/02/76/34/74/360_F_276347475_XLF6MQQ1hj85TN2TkfQtMPWju8a8Ktmh.jpg" class="img-fluid" alt="Opinion 1">
-                <h3 class="Dmitriy Gusev" onclick="openModal('opinion1Modal')">Opinion Title 1</h3>
+                <h3 class="Dmitriy Gusev" onclick="openModal('opinion1Modal')">Dmitriy Gusev</h3>
             </div>
             <div class="col-md-6">
                 <img src="https://t3.ftcdn.net/jpg/03/33/97/58/360_F_333975812_9ihpONGUuPzvsNhAp2ef89Fru79IcOkb.jpg" class="img-fluid" alt="Opinion 2">
-                <h3 class="Kirill Avenianov" onclick="openModal('opinion2Modal')">Opinion Title 2</h3>
+                <h3 class="Kirill Avenianov" onclick="openModal('opinion2Modal')">Kirill Avenianov</h3>
             </div>
             <div class="col-md-6">
                 <img src="https://t4.ftcdn.net/jpg/05/58/99/37/360_F_558993708_t144iGxwaXV1URjTUsyQW23HI49Jj6hh.jpg" class="img-fluid" alt="Opinion 3">
-                <h3 class="Irina Kezik" onclick="openModal('opinion3Modal')">Opinion Title 3</h3>
+                <h3 class="Irina Kezik" onclick="openModal('opinion3Modal')">Irina Kezik</h3>
             </div>
             <div class="col-md-6">
                 <img src="https://t3.ftcdn.net/jpg/02/98/22/76/360_F_298227690_1DWTl73uxJzSOfz2Pss1urEz1XgpCCl4.jpg" class="img-fluid" alt="Opinion 4">
-                <h3 class="Valeria Ivanova" onclick="openModal('opinion4Modal')">Opinion Title 4</h3>
+                <h3 class="Valeria Ivanova" onclick="openModal('opinion4Modal')">Valeria Ivanova</h3>
             </div>
         </div>
     </div>
@@ -1146,3 +1033,10 @@ Philologist Valeria Ivanova - about how the Russian language has changed since t
     </script>
 </body>
 </html>
+
+       
+        
+  
+              
+
+       
